@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style-login.css">
+  <link rel="shortcut icon" href="/assets/media/nficon2023.ico">
+  <script src="/assets/js/login.js" defer></script>
+  <title>Netflix</title>
+</head>
+
+<body>
+  <div class="login">
+    <div id="logo">
+      <a href="login.html"> <img src="./assets/media/Netflix_Logo_RGB.png"></a>
+    </div>
+    <div class="campo">
+      <div id="titulo">
+        <h1>Entrar</h1>
+      </div>
+      <div id="login">
+        <input type="text" name="email-campo" id="email-campo" placeholder="Email ou número de celular" required>
+      </div>
+      <div id="senha">
+        <input type="password" name="senha-campo" id="senha-campo" placeholder="Senha" required>
+      </div>
+      <div id="entrar">
+        <input type="submit" value="Entrar" onclick="logar()">
+      </div>
+      <div id="texto">
+        <p>OU</p>
+      </div>
+      <div id="codigo">
+        <input type="submit" value="Usar código de acesso" onclick="logar()">
+      </div>
+      <div id="esqueceuSenha">
+        <p>Esqueceu a senha?</p>
+      </div>
+      <div id="lembredemim">
+        <input type="checkbox" id="caixalembre">
+        <label for="caixalembre">Lembre-se de mim</label>
+      </div>
+      <div id="registro">
+        <p>Novo por aqui? <span>Assine agora.</span></p>
+      </div>
+      <div id="textocaptcha">
+        <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <span>Saiba mais.</span>
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div id="duvidas">
+          <p>Dúvidas? Ligue <span>0800 591 2876</span></p>
+        </div>
+        <div class="lista">
+          <ul>
+            <li>Perguntas frequentes</li>
+            <li>Central de Ajuda</li>
+            <li>Termos de Uso</li>
+            <li>Privacidade</li>
+            <li class="linha-embaixo" id="fix-margem">Preferências de cookies</li>
+            <li class="linha-embaixo">Informações corporativas</li>
+          </ul>
+        </div>
+        <div id="idioma">
+          <select name="idioma" id="idioma">
+            <option value="pt-br" selected>Português</option>
+            <option value="en-us" disabled>English</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

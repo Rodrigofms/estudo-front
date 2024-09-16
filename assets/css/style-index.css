@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "netlight";
+  src: url(/assets/fonts/NetflixSansLight.otf);
+}
+
+@font-face {
+  font-family: "netbold";
+  src: url(/assets/fonts/NetflixSansBold.otf);
+}
+
+@font-face {
+  font-family: "xilften";
+  src: url(/assets/fonts/NetflixSansMedium.otf);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "xilften";
+  color: white;
+  background-color: #141414;
+}
+
+.navbar {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.466) 100%
+  );
+  position: fixed;
+  z-index: 2;
+}
+
+.scrolled {
+  background-color: #0b0b0b;
+}
+
+.fundo {
+  transition: background-color 0.6s ease;
+}
+
+#imagem > a > img {
+  height: 10%;
+  width: 10%;
+  padding-left: 10rem;
+  padding-top: 0.1%;
+}
+
+.tipos {
+  position: relative;
+  top: -70px;
+  left: 350px;
+}
+
+.tipos > ul {
+  list-style: none;
+  display: flex;
+}
+
+.tipos > ul > li {
+  font-family: "netlight";
+  margin-right: 40px;
+}
+
+.tipos > ul > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tipos > a > p {
+  position: relative;
+  left: 1400px;
+  top: -37px;
+  color: white;
+}
+
+.tipos > a > p:hover {
+  text-decoration: underline;
+}
+
+.destaque {
+  height: 100vh;
+}
+
+.capa > img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  top: -150px;
+}
+
+.logo > img {
+  height: 50%;
+  width: 50%;
+  padding-left: 10rem;
+  padding-top: 0.1%;
+  position: relative;
+  top: -950px;
+}
+
+.descricao {
+  width: 30%;
+  position: relative;
+  top: -920px;
+  left: 150px;
+  font-family: "netlight";
+  font-size: larger;
+  font-style: italic;
+  color: black;
+}
+
+.botoes {
+  position: relative;
+  top: -45px;
+  left: 5px;
+}
+
+.assistir {
+  position: relative;
+  top: -850px;
+  left: 140px;
+}
+
+.assistir > button {
+  padding: 20px 30px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-family: "netbold";
+  font-size: medium;
+  border: 0;
+  background-image: url(/assets/media/icons8-reproduzir-50.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px 20px;
+  padding-left: 40px;
+}
+
+.assistir > button:hover {
+  transition: 0.8s;
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+}
+
+.informacoes {
+  position: relative;
+  top: -910px;
+  left: 290px;
+}
+
+.informacoes > button {
+  padding: 20px 20px;
+  border-radius: 5px;
+  background-color: rgb(131, 133, 133);
+  color: white;
+  font-family: "netbold";
+  font-size: medium;
+  border: 0;
+  background-image: url(/assets/media/icons8-informações-128.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px 20px;
+  padding-left: 40px;
+}
+
+.informacoes > button:hover {
+  transition: 0.8s;
+  background-color: rgb(70, 70, 70);
+  cursor: pointer;
+}
+
+.lancamentos,
+.minha-lista,
+.em-alta {
+  position: relative;
+}
+
+.em-alta {
+  margin-bottom: 50px;
+}
+
+.lancamentos > h1,
+.minha-lista > h1,
+.em-alta > h1 {
+  position: relative;
+  left: 30px;
+}
+
+.slides {
+  display: flex;
+  overflow: hidden;
+}
+
+.slides > input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  margin: 0px 30px;
+  position: relative;
+  transition: 2s;
+  cursor: pointer;
+}
+
+.primeiro,
+.segundo,
+.terceiro {
+  margin-left: 1.5%;
+  transition: margin-left 1.5s ease;
+}
+
+.footer {
+  width: 100%;
+  height: 30%;
+  gap: 30px 0;
+  background-color: black;
+}
+
+.imagens {
+  display: inline;
+  position: relative;
+  top: 50px;
+  left: 300px;
+}
+
+.imagens > img {
+  height: 2%;
+  width: 2%;
+  padding: 0 10px;
+}
+
+.textos-footer {
+  height: 300px;
+  gap: 40px 0;
+}
+
+.footer-texto1 > p,
+.footer-texto2 > p,
+.footer-texto3 > p,
+.footer-texto4 > p {
+  font-family: "netlight";
+  padding: 0px 60px;
+}
+
+.footer-texto1,
+.footer-texto2,
+.footer-texto3,
+.footer-texto4 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.footer-texto1 {
+  position: relative;
+  top: 100px;
+  left: 250px;
+}
+
+.footer-texto2 {
+  position: relative;
+  top: -56px;
+  left: 500px;
+}
+
+.footer-texto3 {
+  position: relative;
+  top: -212px;
+  left: 750px;
+}
+
+.footer-texto4 {
+  position: relative;
+  top: -369px;
+  left: 1000px;
+}
+
+.imagens > img:hover {
+  cursor: pointer;
+}
+
+.footer-texto1 > p:hover,
+.footer-texto2 > p:hover,
+.footer-texto3 > p:hover,
+.footer-texto4 > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

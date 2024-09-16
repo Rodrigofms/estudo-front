@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "netlight";
+  src: url(/assets/fonts/NetflixSansLight.otf);
+}
+
+@font-face {
+  font-family: "netbold";
+  src: url(/assets/fonts/NetflixSansBold.otf);
+}
+
+@font-face {
+  font-family: "xilften";
+  src: url(/assets/fonts/NetflixSansMedium.otf);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(/assets/media/BR-pt-20240805-POP_SIGNUP_TWO_WEEKS-perspective_WEB_18b616df-024c-4fd3-bfe4-0bed3a87f049_large.jpg);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "xilften";
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.login {
+  z-index: 2;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+#logo > a > img {
+  height: 10%;
+  width: 10%;
+  padding-left: 10rem;
+  padding-top: 0.1%;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 450px;
+  height: 650px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-family: "netlight";
+  border-radius: 5px;
+  gap: 5px;
+}
+
+#titulo {
+  font-family: "netbold";
+  position: relative;
+  left: -100px;
+}
+
+#email-campo,
+#senha-campo {
+  background-color: rgba(0, 0, 0, 0.521);
+  color: white;
+  width: 100%;
+  padding: 16px 35px;
+  margin: 10px 0;
+  border: 1px solid #808080a4;
+  border-radius: 4px;
+  position: relative;
+  left: -32px;
+  text-align: left;
+}
+
+#email-campo::placeholder,
+#senha-campo::placeholder {
+  color: #b6b6b5;
+  font-family: "netbold";
+}
+
+#entrar > input {
+  background-color: #e50914;
+  font-family: "netbold";
+  font-size: medium;
+  color: white;
+  padding: 10px 140px;
+  position: relative;
+  left: 5px;
+  border-radius: 5px;
+  border: 0;
+}
+
+#entrar > input:hover {
+  transition: 0.5s;
+  background-color: #a30008;
+  cursor: pointer;
+}
+
+#texto > p {
+  color: #b6b6b5;
+  font-family: "netbold";
+  margin: 10px 0px;
+}
+
+#codigo > input {
+  background-color: rgba(52, 53, 53, 0.7);
+  font-family: "netbold";
+  font-size: medium;
+  color: white;
+  padding: 10px 70px;
+  border-radius: 5px;
+  border: 0;
+}
+
+#codigo > input:hover {
+  transition: 0.5s;
+  background-color: rgba(40, 41, 41, 0.7);
+  cursor: pointer;
+}
+
+#esqueceuSenha > p {
+  font-family: "xilften";
+  font-size: medium;
+  margin: 20px 1px;
+}
+
+#esqueceuSenha > p:hover {
+  color: #bdbdbd;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#lembredemim {
+  position: relative;
+  left: -80px;
+}
+
+#caixalembre {
+  border-radius: 10px;
+}
+
+#registro {
+  position: relative;
+  left: -50px;
+}
+
+#registro > p > span {
+  font-family: "netbold";
+}
+
+#registro > p > span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#textocaptcha {
+  width: 320px;
+  font-family: "xilften";
+  font-size: smaller;
+  color: #8c8c8c;
+}
+
+#textocaptcha > p > span {
+  color: #0071eb;
+}
+
+#textocaptcha > p > span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 100vw;
+  height: 330px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(0, 0, 0, 1) 35%
+  );
+  color: #afafaf;
+  font-family: "netbold";
+}
+
+#duvidas {
+  position: relative;
+  left: -600px;
+  top: -60px;
+}
+
+#duvidas > p > span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.lista > ul {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: underline;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 154px;
+  top: -55px;
+}
+
+.lista > ul > li {
+  margin-right: 150px;
+  flex: none;
+}
+
+.linha-embaixo {
+  position: relative;
+  text-align: center;
+  top: 45px;
+  left: -1092px;
+}
+
+#fix-margem {
+  position: relative;
+  margin-right: 130px;
+}
+
+.lista > ul:hover {
+  cursor: pointer;
+}
+
+#idioma > select {
+  appearance: none;
+  position: relative;
+  left: -644px;
+  top: 30px;
+  background-color: #000000;
+  border: 1px solid #8c8c8c;
+  font-family: "netbold";
+  font-size: medium;
+  color: white;
+  padding: 8px 30px;
+  border-radius: 5px;
+  background-image: url(/assets/media/icons8-language-30.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px 20px;
+  padding-left: 40px;
+}
